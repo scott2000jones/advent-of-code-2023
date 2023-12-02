@@ -9,7 +9,7 @@ To run on smaller test inputs: `ruby runner.rb testmode all`
 
 Or to run specific days:
 
-`ruby runner.rb <tesmode/livemode> <day_numbers_to_run>`
+`ruby runner.rb <testmode/livemode> <day_numbers_to_run>`
 
 Example:
 `ruby runner.rb livemode 1 2 3`
