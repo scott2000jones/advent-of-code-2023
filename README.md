@@ -3,11 +3,13 @@ To run all implemented days:
 
 `bundle install`
 
-`ruby runner.rb all`
+To run on actual inputs: `ruby runner.rb livemode all`
+
+To run on smaller test inputs: `ruby runner.rb testmode all`
 
 Or to run specific days:
 
-`ruby runner.rb <day_numbers_to_run>`
+`ruby runner.rb <tesmode/livemode> <day_numbers_to_run>`
 
 Example:
-`ruby runner.rb 1 2 3`
+`ruby runner.rb livemode 1 2 3`

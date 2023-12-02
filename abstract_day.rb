@@ -6,5 +6,5 @@ class AbstractDay
     abstract!
 
     sig { abstract.params(input_file: String).void }
-    def run_day(input_file); end
+    def run_on(input_file); end
 end
