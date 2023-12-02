@@ -1,7 +1,11 @@
 # advent-of-code-2023
-To run:
+To run all implemented days:
 
 `bundle install`
+
+`ruby runner.rb all`
+
+Or to run specific days:
 
 `ruby runner.rb <day_numbers_to_run>`
 

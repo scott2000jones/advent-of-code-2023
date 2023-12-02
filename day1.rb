@@ -5,6 +5,12 @@ class Day1 < AbstractDay
     
     sig { override.params(input_file: String).void }
     def run_day(input_file) 
-        pp "hello i am day1"
+        lines = File.readlines(input_file, chomp: true)
+        puts "Part 1 result: %s " % part_1(lines)
+    end
+
+    sig { params(lines: T::Array[String]).returns(String) }
+    def part_1(lines)
+        'tbd'
     end
 end
