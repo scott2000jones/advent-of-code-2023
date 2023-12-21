@@ -56,9 +56,9 @@ class Day1 < AbstractDay
     def part_2(lines)
         total = 0
         lines.each do |l|
-            first_match = T.must(l[/[0-9]|one|two|three|four|five|six|seven|eight|nine/])
-            second_match = T.must(l.reverse[Regexp.new("[0-9]|" + "one|two|three|four|five|six|seven|eight|nine".reverse)]).reverse
-            total += (VALUE_MAP[first_match].to_s + VALUE_MAP[second_match].to_s).to_i
+            first_match = l[/[0-9]|one|two|three|four|five|six|seven|eight|nine/]
+            second_match = l.reverse[Regexp.new("[0-9]|" + "one|two|three|four|five|six|seven|eight|nine".reverse)]&.reverse
+            total += (VALUE_MAP.fetch(first_match).to_s + VALUE_MAP.fetch(second_match).to_s).to_i if first_match && second_match
         end
 
         total.to_s
